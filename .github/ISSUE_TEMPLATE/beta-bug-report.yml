@@ -1,0 +1,51 @@
+name: Beta Bug Report
+description: Report a concrete beta bug that does not yet look like a reusable proving finding.
+title: "[bug] "
+labels:
+  - beta
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for direct beta malfunctions, onboarding breaks, or confusing workflow behavior.
+  - type: input
+    id: project
+    attributes:
+      label: Project
+      description: Name of the beta project or repo.
+      placeholder: STM32TestProject2
+    validations:
+      required: true
+  - type: input
+    id: command
+    attributes:
+      label: Command or step
+      description: Which command, workflow step, or setup stage failed?
+      placeholder: .\stm32.cmd activation-check
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What actually happened?
+      placeholder: Describe the failure as concretely as possible.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect instead?
+      placeholder: Describe the expected result.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Include useful error text, logs, screenshots, or file paths.
+      placeholder: Paste the most useful evidence.
+    validations:
+      required: true

@@ -11,3 +11,4 @@ Use this repository to:
 - request retest clarification from the maintainer side
 
 If you are testing a proving project, prefer the `Proving Finding` issue form.
+If you are reporting a straightforward beta malfunction, use the `Beta Bug Report` form.
