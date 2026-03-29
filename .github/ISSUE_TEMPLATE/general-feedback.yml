@@ -1,0 +1,19 @@
+name: General Feedback
+description: Share unstructured beta feedback, questions, or edge cases that do not fit the other forms.
+title: "[feedback] "
+labels:
+  - beta
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form if your feedback does not fit the proving finding or bug report templates.
+  - type: textarea
+    id: message
+    attributes:
+      label: Feedback
+      description: Describe what you observed, expected, or want clarified.
+      placeholder: Write freely. Include as much useful context as you can.
+    validations:
+      required: true
